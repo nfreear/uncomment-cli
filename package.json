@@ -1,10 +1,11 @@
 {
   "name": "uncomment-cli",
-  "version": "1.0.0-alpha",
+  "version": "0.9.0",
   "description": "Strip most comments from Javascript, piped via stdin.",
   "license": "MIT",
   "bin": {
-    "_unc": "bin/uncomment.js"
+    "_unc": "bin/uncomment.js",
+    "uncomment": "bin/uncomment.js"
   },
   "repository": "https://github.com/nfreear/uncomment-cli",
   "author": "Nick Freear {@nfreear}",
@@ -19,9 +20,12 @@
   },
   "keywords": [
     "strip",
-    "strip-comments",
+    "comments",
+    "remove",
     "uncomment",
+    "uncommentify",
     "browserify",
     "cli"
-  ]
+  ],
+  "//": "https://npmjs.com/package/uncommentify"
 }

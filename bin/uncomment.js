@@ -18,14 +18,10 @@ process.stdin.on('data', function (data) {
   // Multi-line: https://stackoverflow.com/questions/3577767/javascript-comment-stripper
   // var strip = data.replace(/\/\*[^!](.|[\r\n])*?\*\//g, ''); // [^\/]
   var strip = uncomment(data, {
-    // removeEmptyLines: true
+    removeEmptyLines: false
   });
 
-  // Single line, except "//# MAP" lines.
-  // strip = strip.replace(/\/\/ .*/gm, '');
-
   process.stdout.write(strip);
-  // process.stderr.write('>Data:' + strip);
 });
 
 process.stdout.on('error', function (err) {
